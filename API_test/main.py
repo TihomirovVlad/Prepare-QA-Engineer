@@ -3,11 +3,11 @@ import requests
 def send_payment(data):
     return requests.post(url, json=data)
 
-url = "https://httpbin.org/anything"  # ← убраны пробелы!
+url = "https://httpbin.org/anything"
 payload = {
     "from": "ACC1",
     "to": "ACC2",
-    "amount": 100,  # ← лучше int или строка в реальных платежах
+    "amount": 100,
     "currency": "RUB"
 }
 
