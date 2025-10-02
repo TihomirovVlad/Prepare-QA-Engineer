@@ -1,0 +1,16 @@
+# ХОРОШО:
+GET    /users           # список пользователей
+POST   /users           # создать пользователя
+GET    /users/123       # получить пользователя
+PUT    /users/123       # обновить пользователя
+DELETE /users/123       # удалить пользователя
+
+GET    /users/123/orders    # заказы пользователя
+POST   /users/123/orders    # создать заказ для пользователя
+
+# ПЛОХО:
+GET    /getUsers
+POST   /createUser
+GET    /getUserById
+POST   /updateUser
+GET    /deleteUser

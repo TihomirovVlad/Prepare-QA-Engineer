@@ -1,0 +1,5 @@
+# Фильтрация, сортировка, пагинация:
+GET /users?status=active&role=admin          # фильтрация
+GET /users?sort=name&order=desc              # сортировка
+GET /users?page=2&limit=50                   # пагинация
+GET /users?fields=id,name,email              # выбор полей

@@ -1,8 +1,0 @@
-#200 OK - успех( GET, PUT, PATCH)
-#201 Created - создано(POST)
-#400 Bad Request - ошибка валидации ( сумма < 0, неверная валюта)
-#401 Unauthorized - нет токена
-#403 Forbidden - нет прав
-#404 Not Found - ресурс не существует
-#409 Conflict - конфликт( например, повторный платёж без idempotency-key)
-#500 Internal Server Error - баг на сервере ( ни в коем случае в проде)

@@ -1,0 +1,43 @@
+# Простые типы:
+{
+    "string": "Hello World",
+    "number": 42,
+    "float": 3.14,
+    "boolean": true,
+    "null": null
+}
+
+# Коллекции:
+{
+    "array": [1, 2, 3, 4, 5],
+    "object": {
+        "nested": "value"
+    }
+}
+
+# Комплексные структуры:
+{
+    "user": {
+        "id": 123,
+        "name": "Иван Петров",
+        "email": "ivan@test.com",
+        "is_active": true,
+        "roles": ["user", "admin"],
+        "metadata": {
+            "created_at": "2024-01-01",
+            "login_count": 42
+        }
+    },
+    "payments": [
+        {
+            "id": "pay_001",
+            "amount": 1000.50,
+            "currency": "RUB"
+        },
+        {
+            "id": "pay_002",
+            "amount": 2000.00,
+            "currency": "USD"
+        }
+    ]
+}

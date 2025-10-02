@@ -1,6 +1,6 @@
 from task import TestUser
 try:
-    user1 = TestUser("vlad", "vlad@test.com")
+    user1 = TestUser("vlad", "vlad@tests.com")
     print(f"✅ User created: {user1}")
 
     user2 = TestUser.create_random_user()

@@ -1,4 +1,0 @@
-#Resources : /transfers, /accounts , /payments
-#Doing : http-methods
-#State - in body(JSON)
-#Idempotents good - recurse payment with idempotents-key -> not created a clone.

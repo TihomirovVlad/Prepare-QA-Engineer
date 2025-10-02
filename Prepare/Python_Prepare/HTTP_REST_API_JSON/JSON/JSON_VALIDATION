@@ -1,0 +1,20 @@
+# Пример схемы для платежа:
+payment_schema = {
+    "type": "object",
+    "properties": {
+        "id": {"type": "string"},
+        "amount": {"type": "number", "minimum": 0},
+        "currency": {"type": "string", "enum": ["RUB", "USD", "EUR"]},
+        "status": {"type": "string", "enum": ["pending", "success", "failed"]},
+        "created_at": {"type": "string", "format": "date-time"}
+    },
+    "required": ["id", "amount", "currency", "status"]
+}
+
+# Валидация в тестах:
+def validate_payment_response(response):
+    data = response.json()
+    assert "id" in data
+    assert data["amount"] > 0
+    assert data["currency"] in ["RUB", "USD", "EUR"]
+    assert data["status"] in ["pending", "success", "failed"]

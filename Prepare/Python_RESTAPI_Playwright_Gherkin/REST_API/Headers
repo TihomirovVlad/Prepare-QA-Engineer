@@ -1,4 +1,0 @@
-#Обязательно:
-#assert "application/json" in response.headers["Content-Type"]
-#Иногда нужно:
-#assert response.headers["X-Request-ID"] # для отслеживания(трейсинг)

@@ -1,0 +1,19 @@
+# Заголовки запроса:
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9...
+Content-Type: application/json
+User-Agent: Mozilla/5.0...
+Accept: application/json
+Idempotency-Key: unique-key-123
+
+# Заголовки ответа:
+Content-Type: application/json
+Content-Length: 125
+Cache-Control: no-cache
+X-RateLimit-Limit: 1000
+X-RateLimit-Remaining: 999
+
+
+#Обязательно:
+#assert "application/json" in response.headers["Content-Type"]
+#Иногда нужно:
+#assert response.headers["X-Request-ID"] # для отслеживания(трейсинг)
